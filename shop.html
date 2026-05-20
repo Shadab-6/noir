@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shop | NOIR.</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/shop.css">
+  <link rel="stylesheet" href="assets/css/cart.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="container nav-wrapper">
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        NOIR.
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active-link">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="cart-btn" id="cartBtn">
+        <img class="cart-icon" src="assets/images/online-shopping.png" alt="Cart"/>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- SHOP HERO -->
+  <section class="shop-hero">
+
+    <div class="container">
+
+      <p class="shop-subtitle">
+        PREMIUM COLLECTION
+      </p>
+
+      <h1>
+        Explore Our<br>
+        Luxury Products
+      </h1>
+
+    </div>
+
+  </section>
+
+  <!-- FILTER SECTION -->
+  <section class="filters-section">
+
+    <div class="container filters-wrapper">
+
+      <input type="text" placeholder="Search Product..." id="searchInput">
+
+      <select id="categoryFilter">
+
+        <option value="all">All Categories</option>
+        <option value="hoodie">Hoodies</option>
+        <option value="jacket">Jackets</option>
+        <option value="jersey">Jersey</option>
+
+      </select>
+
+      <select id="sortFilter">
+
+        <option value="default">Sort By</option>
+        <option value="low">Price Low To High</option>
+        <option value="high">Price High To Low</option>
+
+      </select>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="shop-products">
+
+    <div class="container">
+
+      <div class="products-grid" id="shopProducts">
+
+        <!-- Black Hoodie -->
+        <div
+          class="product-card"
+          data-static-product="true"
+          data-product-id="5"
+          data-category="hoodie"
+          data-name="black hoodie"
+        >
+
+          <div class="product-image">
+            <img src="assets/images/item5.png" alt="Black Hoodie">
+            <span class="sale-badge">SALE</span>
+            <button class="quick-view" type="button" data-product-id="5">Quick View</button>
+          </div>
+
+          <div class="product-info">
+            <h3>Black Hoodie</h3>
+
+            <div class="price-box">
+              <span class="new-price">Rs.3999</span>
+              <span class="old-price">Rs.7999</span>
+            </div>
+
+            <button class="shop-cart-btn" type="button">
+              <img class="add-cart-icon" src="assets/images/online-shopping.png" alt="">
+              Add To Cart
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Brown Hoodie -->
+        <div
+          class="product-card"
+          data-static-product="true"
+          data-product-id="6"
+          data-category="hoodie"
+          data-name="brown hoodie"
+        >
+
+          <div class="product-image">
+            <img src="assets/images/item6.png" alt="Brown Hoodie">
+            <span class="sale-badge">SALE</span>
+            <button class="quick-view" type="button" data-product-id="6">Quick View</button>
+          </div>
+
+          <div class="product-info">
+            <h3>Brown Hoodie</h3>
+
+            <div class="price-box">
+              <span class="new-price">Rs.2999</span>
+              <span class="old-price">Rs.5999</span>
+            </div>
+
+            <button class="shop-cart-btn" type="button">
+              <img class="add-cart-icon" src="assets/images/online-shopping.png" alt="">
+              Add To Cart
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-wrapper">
+
+      <div>
+
+        <h3>NOIR.</h3>
+
+        <p>
+          Your go-to for effortless shopping.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Pinterest</a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- CART -->
+  <div id="cartComponent"></div>
+
+  <!-- JS -->
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/shop.js"></script>
+  <script src="assets/js/whatsapp-order.js"></script>
+
+</body>
+</html>

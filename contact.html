@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | NOIR.</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/cart.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+
+    <div class="container nav-wrapper">
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        NOIR.
+      </div>
+
+      <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active-link">Contact</a>
+
+      </nav>
+
+      <button class="cart-btn" id="cartBtn">
+
+        🛒
+
+        <img class="cart-icon" src="assets/images/online-shopping.png" alt="Cart"/>
+
+        <span class="cart-count" id="cartCount">
+          0
+        </span>
+
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="contact-hero">
+
+    <div class="container">
+
+      <p class="contact-subtitle">
+        CONTACT US
+      </p>
+
+      <h1>
+        Let's Connect<br>
+        With NOIR.
+      </h1>
+
+      <p class="contact-description">
+
+        Have questions about products, orders, or collaborations?
+        Send us a message directly on WhatsApp.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+
+    <div class="container contact-wrapper">
+
+      <!-- LEFT -->
+      <div class="contact-info">
+
+        <p class="section-subtitle">
+          GET IN TOUCH
+        </p>
+
+        <h2>
+          Premium Support Experience
+        </h2>
+
+        <p>
+
+          Our support team is available to help you with orders,
+          product information, and custom inquiries.
+
+        </p>
+
+        <div class="info-box">
+
+          <h3>
+            WhatsApp
+          </h3>
+
+          <p>
+            +91 9136579781
+          </p>
+
+        </div>
+
+        <div class="info-box">
+
+          <h3>
+            Email
+          </h3>
+
+          <p>
+            support@noir.com
+          </p>
+
+        </div>
+
+        <div class="info-box">
+
+          <h3>
+            Address
+          </h3>
+
+          <p>
+            New Delhi, India
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="contact-form-box">
+
+        <form id="whatsappForm">
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+          >
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          >
+
+          <input
+            type="text"
+            id="subject"
+            placeholder="Subject"
+            required
+          >
+
+          <textarea
+            id="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">
+            Send On WhatsApp
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-wrapper">
+
+      <div>
+
+        <h3>NOIR.</h3>
+
+        <p>
+          Your go-to for effortless shopping.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Pinterest</a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- CART -->
+  <div id="cartComponent"></div>
+
+  <!-- JS -->
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/whatsapp-order.js"></script>
+
+</body>
+</html>
